@@ -1,0 +1,56 @@
+:root {
+  --bulma-family-primary: 'IBM Plex Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+main {
+  min-height: calc(100dvh - 244px);
+}
+
+img {
+  object-fit: cover;
+}
+
+/* BULMA */
+.section {
+  max-width: 1400px;
+}
+
+.content {
+  --bulma-content-block-margin-bottom: 1em;
+}
+
+.navbar {
+  justify-content: center;
+}
+
+.navbar > .navbar-menu {
+  max-width: 1260px;
+  box-shadow: none;
+}
+
+/* CUSTOM */
+.is-120x150 {
+  width: 120px;
+  height: 150px;
+}
+
+.is-240x300 {
+  width: 240px;
+  height: 300px;
+}
+
+.columns-reversed {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1024px) {
+  .columns-reversed.is-desktop {
+      display: block;
+  }
+}
